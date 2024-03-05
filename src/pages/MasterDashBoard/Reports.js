@@ -3,7 +3,7 @@ import { FaFilter } from "react-icons/fa6";
 
 const Reports = () => {
   return (
-    <div className='hidden'>
+    <div className='max-sm:hidden'>
      <div class="my-16 m-6">  
      <h1 class="font-bold text-xl text-sky-600 mb-4 ">Report</h1>
      <p class="mb-4">Manage your report details</p>
@@ -39,7 +39,7 @@ const Reports = () => {
      </div>
   </div>
 
-  <div className='hidden'>
+  <div className='max-sm:hidden'>
     <h1 class="font-bold text-xl text-sky-500  mx-5">Contract Dues</h1>
     <div className='flex flex-col md:flex-row'>
     <div class="container border p-8 mx-5 justify-center my-8 w-4/12 rounded-md shadow-lg bg-gradient-to-r from-[#EEF9FA] to-white border-[#EEF9FA]">
