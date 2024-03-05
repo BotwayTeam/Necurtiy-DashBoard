@@ -10,7 +10,7 @@ const SideBar = ({activeMenu,setActiveMenu,screenSize}) => {
       setActiveMenu(false)
     }
   }
- 
+  
   return (
     <div>
       {
