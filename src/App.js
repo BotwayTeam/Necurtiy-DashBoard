@@ -1,23 +1,28 @@
-import logo from './logo.svg';
-import './App.css';
+import { useEffect, useState } from "react";
+import Footer from "./Footer";
+import Header from "./Header";
+import MasterDashBoard from "./pages/MasterDashBoard";
+import DashBoard from "./pages/DashBoard";
+
 
 function App() {
+  const [activeMenu,setActiveMenu] = useState(true)
+  const [screenSize,setScreenSize] = useState(undefined)
+
+  console.log(screenSize);
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Header 
+      activeMenu={activeMenu}
+      setActiveMenu={setActiveMenu}
+      screenSize={screenSize}
+      setScreenSize={setScreenSize}/>
+          <div className={
+            `${activeMenu 
+              ? `md:ml-60`:`flex-2`}`
+           }>
+              <DashBoard/>
+            </div>
     </div>
   );
 }
