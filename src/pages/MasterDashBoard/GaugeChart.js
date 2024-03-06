@@ -56,7 +56,7 @@ const GaugeChart = ({title}) => {
  <ReactECharts option={mainChartOptions} style={{ height: '200px', width: '200px' }} className='' />
 </div>
 <div>
- <ReactECharts option={nestedChartOptions} style={{ height: '200px', width: '151px' }} className='absolute md:top-[23.8em] top-[88em]' />
+ <ReactECharts option={nestedChartOptions} style={{ height: '200px', width: '151px' }} className='max-sm:hidden absolute md:top-[23.8em] top-[88em]' />
 </div>
 </div>
   );

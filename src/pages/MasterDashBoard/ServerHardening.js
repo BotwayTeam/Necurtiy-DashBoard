@@ -71,7 +71,7 @@ const NestedPieChart = ({title}) => {
         <ReactECharts option={mainChartOptions} style={{ height: '200px', width: '200px' }} className='' />
       </div>
       <div>
-        <ReactECharts option={nestedChartOptions} style={{ height: '100px', width: '100px' }} className='absolute md:top-[1170px]  md:left-[400px] top-[153em] left-[7em]' />
+        <ReactECharts option={nestedChartOptions} style={{ height: '100px', width: '100px' }} className='max-sm:hidden absolute md:top-[1170px]  md:left-[400px] top-[153em] left-[7em]' />
       </div>
     </div>
   );
