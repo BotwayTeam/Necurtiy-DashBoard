@@ -68,10 +68,10 @@ const NestedPieChart = ({title}) => {
     <div className='border-2 border-gray-300 shadow-lg rounded-lg md:w-[20%] w-full max-sm:h-72'>
            <div className='border-b-2 flex justify-between px-2'><p className='m-2 font-bold'>{title}</p><MdInfo size={25} className='text-gray-400 mt-2'/></div>
       <div>
-        <ReactECharts option={mainChartOptions} style={{ height: '200px', width: '200px' }} className='' />
+        <ReactECharts option={mainChartOptions} style={{ height: '200px' }} className='' />
       </div>
       <div>
-        <ReactECharts option={nestedChartOptions} style={{ height: '100px', width: '100px' }} className='max-sm:hidden absolute md:top-[1170px]  md:left-[400px] top-[153em] left-[7em]' />
+        <ReactECharts option={nestedChartOptions} style={{ height: '100px', width: '100px' }} className='max-sm:hidden absolute md:top-[1180px]  md:left-[420px] top-[153em] left-[7em]' />
       </div>
     </div>
   );

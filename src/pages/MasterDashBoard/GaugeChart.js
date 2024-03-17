@@ -53,10 +53,10 @@ const GaugeChart = ({title}) => {
     <div className='border-2 border-gray-300 shadow-lg rounded-lg md:w-[20%] w-full h-80'>
     <div className='border-b-2 flex justify-between px-2'><p className='m-2 font-bold'>{title}</p><MdInfo size={25} className='text-gray-400 mt-2'/></div>
 <div>
- <ReactECharts option={mainChartOptions} style={{ height: '200px', width: '200px' }} className='' />
+ <ReactECharts option={mainChartOptions} style={{ height: '200px' }} className='mr-9' />
 </div>
 <div>
- <ReactECharts option={nestedChartOptions} style={{ height: '200px', width: '151px' }} className='max-sm:hidden absolute md:top-[23.8em] top-[88em]' />
+ <ReactECharts option={nestedChartOptions} style={{ height: '200px', width: '150px' }} className='max-sm:hidden absolute md:top-[23.8em] top-[88em] right-40' />
 </div>
 </div>
   );

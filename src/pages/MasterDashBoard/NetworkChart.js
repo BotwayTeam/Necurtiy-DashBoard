@@ -38,9 +38,9 @@ const NetworkChart = ({title}) => {
         ]
       };
   return (
-    <div className='border-2 border-gray-300 shadow-lg rounded-lg md:w-3/12 w-full'>
+    <div className='border-2 border-gray-300 shadow-lg rounded-lg md:w-3/12 w-full '>
         <div className='border-b-2 flex justify-between px-2'><p className='m-2 font-bold'>{title}</p><MdInfo size={25} className='text-gray-400 mt-2'/></div>
-        <ReactECharts option={chartOptions} className=''/>
+        <ReactECharts option={chartOptions} className='-z-10'/>
     </div>
   )
 }
